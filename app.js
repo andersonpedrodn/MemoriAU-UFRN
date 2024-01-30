@@ -1,5 +1,5 @@
 new Vue({
-    el: '#app',
+    el: '#telaInicial',
     data: {
         frase: ["Legado", "História", "Inovação", "Premiações"],
         indiceFrase: 0,
