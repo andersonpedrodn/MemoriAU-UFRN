@@ -9,12 +9,13 @@
 
 .textoPrincipal{
     font-size: 80px;
-    color: #ce1a1a;
+    color: #ce1a1a; 
     margin: 0;
 }
 
 .au{
     display: inline-block;
+    text-transform: uppercase;
 
 
 }
