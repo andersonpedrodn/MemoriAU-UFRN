@@ -1,0 +1,21 @@
+#telaInicial{
+    font-weight: 400;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.textoPrincipal{
+    font-size: 80px;
+    color: #ce1a1a;
+    margin: 0;
+}
+
+.au{
+    display: inline-block;
+
+
+}
+
