@@ -1,0 +1,49 @@
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 96px;
+    position: absolute;
+    width: 684.71px;
+    height: 86px;
+    color: white;
+    transform: translate(-40%, 100%);
+    font-size: 6rem;
+}
+
+.subtext-container {
+    text-align: center;
+    transform: translate(40%,70%);
+
+}
+.subtext {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.years-text {
+    color: white; /* Cor do texto */
+    font-size: 2rem; /* Tamanho da fonte menor para "50 anos de história" */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
+    transform: translate(0%, 250%);
+    font-size: 2.5rem;
+
+
+  }
