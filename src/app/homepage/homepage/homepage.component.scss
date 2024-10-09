@@ -44,6 +44,12 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
     transform: translate(0%, 250%);
     font-size: 2.5rem;
+    display: inline-block;
+    
 
+  }
 
+.years-text span {
+    transition: opacity 8.0s ease-in-out;
+    opacity: 1;
   }
