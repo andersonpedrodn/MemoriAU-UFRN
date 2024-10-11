@@ -1,16 +1,19 @@
 $azul-escuro: #143F71;
 $backgroundColorRodape: #FFFFFF;
 
-.footer {
+.footer-component {
+    display: flex;
     background-color: $backgroundColorRodape;
     padding: 20px 0;
     position: relative;
+    flex-grow: 1;
 }
 
 .footer-container {
     position: relative;
     
 }
+
 
 .footer-logo {
     // position: relative;
@@ -28,6 +31,7 @@ $backgroundColorRodape: #FFFFFF;
 }
    
 .footer-instituicoes {
+    display: flex;
     position: relative;
     left: 99px;
     top: 171px;
@@ -39,7 +43,7 @@ $backgroundColorRodape: #FFFFFF;
     top: 250px;
 }
 
-.footer-nav {
+footer .footer-nav {
     display: flex;
     justify-content: space-between;
     flex-basis: 35%;
@@ -79,6 +83,7 @@ $backgroundColorRodape: #FFFFFF;
 }
 
 .footer-copyright {
+    display: flex;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 20px;

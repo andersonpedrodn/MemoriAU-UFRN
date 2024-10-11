@@ -1,11 +1,19 @@
 .hero {
     position: relative;
     text-align: center;
+    
+}
+
+html {
+    width: 100%;
+    margin: 0;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
+    
+    
 }
 
 .hero-text-container {
