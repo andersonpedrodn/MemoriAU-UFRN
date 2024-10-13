@@ -1,11 +1,19 @@
 .hero {
     position: relative;
     text-align: center;
+    
+}
+
+html {
+    width: 100%;
+    margin: 0;
 }
 
 .hero-image {
     width: 100%;
     height: auto;
+    
+    
 }
 
 .hero-text-container {
@@ -18,7 +26,7 @@
 }
 
 .hero-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Sora", serif;
     font-size: 96px;
     position: absolute;
     width: 684.71px;
