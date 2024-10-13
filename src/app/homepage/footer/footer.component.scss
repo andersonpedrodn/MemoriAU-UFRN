@@ -1,6 +1,7 @@
 $azul-escuro: #143F71;
 $backgroundColorRodape: #FFFFFF;
 
+
 .footer-component {
     display: flex;
     background-color: $backgroundColorRodape;
@@ -43,17 +44,18 @@ $backgroundColorRodape: #FFFFFF;
     top: 250px;
 }
 
-footer .footer-nav {
-    display: flex;
+
+.footer-nav {
+    // display: flex;
     justify-content: space-between;
     flex-basis: 35%;
     gap: 30px;
-    margin-left: 60%;
-    margin-top: -10%;
     width: 120px;
     height: 26px;
     left: 773px;
     font-size: 18px;
+    text-decoration: none;
+    
 }   
 
 .footer-social {
