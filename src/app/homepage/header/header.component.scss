@@ -1,3 +1,6 @@
+$textoNavbar-color: #143F71;
+$backgroundNavbar-color: #FFFFFFC2;
+
 .navbar-dropdown {
   transition: opacity 0.3s ease;
 }
@@ -5,11 +8,17 @@
 .navbar {
   position: relative;
   height: 80px;
+  background-color: $backgroundNavbar-color;
   
 }
 
 .navbar-menu {
-  background-color: rgba(255, 255, 255, 0.8); 
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Montserrat", sans-serif;
+  color:#143F71;
+  background-color: $backgroundNavbar-color;
+
+  
 }
 .navbar-burger {
   margin-left: auto;
@@ -20,6 +29,9 @@
   left: auto;
 }
 
+.navbar-item, .navbar-link{
+  color: $textoNavbar-color;
+}
 
 
 // header {
