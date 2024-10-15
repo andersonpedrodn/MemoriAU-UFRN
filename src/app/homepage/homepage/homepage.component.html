@@ -1,9 +1,17 @@
 <main>
    <section class="position-relative">
     <img src="assets/images/galinheiro2008.png" alt="Imagem do galinheiro do ano de 2008" class="img-fluid w-100">
-    <div class="onverlay text-center"> 
-        <h1 class="display-1 text-white">MemoriAU</h1>
+    <div class="overlay-text"> 
+        <h1 class="hero-text">MemoriAU</h1>
+        <div class="subtext-container">
+            <p class="subtext">arquitetura e</p>
+            <p class="subtext">urbanismo</p>
+            <p class="subtext">UFRN e</p>
+        </div>
+        <h1 class="years-text is-5">50 anos de <span [ngClass]="{'hide': isHiding}">{{ palavraDinamica }}</span></h1>
     </div>
+
+    <div class="overlay-box"></div>
    </section>
         <!-- <img src="assets/images/galinheiro2008.png" alt="Imagem do galinheiro do ano de 2008">
         <div class="hero-text-container has-text-centered">

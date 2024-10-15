@@ -3,6 +3,50 @@ main {
   padding-top: 3%;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o retângulo */
+    width: 50%; /* Ajuste o tamanho conforme necessário */
+    height: 50%;
+    width: 40%;
+    padding: 20px;
+    background-color: rgba(128, 0, 0, 0.7); /* Cor vermelha com transparência */
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #A23838B2;
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding-right: 34%;
+    padding-top: 10%;
+    z-index: 2;
+}
+
+.hero-text {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
 .position-relative {
     position: relative; /* Permite posicionar elementos dentro deste container */
     height: 100vh; /* Faz a seção ocupar toda a altura da viewport */
