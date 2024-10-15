@@ -10,8 +10,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isDropdownOpen = false;
+  isBurgerOpen = false;
 
-  toggleDropdown(state: boolean) {
-    this.isDropdownOpen = state;
+  toggleDropdown(state?: boolean) {
+    if (state !== undefined) {
+      this.isDropdownOpen = state
+    } else {
+      this.isDropdownOpen = !this.isDropdownOpen;
+    }
+  }
+
+  toggleBurgerMenu() {
+    this.isBurgerOpen = !this.isBurgerOpen;
   }
 }
