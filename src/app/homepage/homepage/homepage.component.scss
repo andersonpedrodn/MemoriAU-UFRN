@@ -32,6 +32,7 @@ main {
 
 .overlay-text {
     position: absolute;
+    font-family: "Sora", sans-serif;;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -40,12 +41,25 @@ main {
     padding-right: 34%;
     padding-top: 10%;
     z-index: 2;
+
 }
 
 .hero-text {
   font-size: 5rem;
   font-weight: bold;
 }
+
+.years-text {
+  position: absolute;
+  font-size: 3rem;
+  padding-left: 40%;
+  
+  .heightlight {
+    font-weight: bold;
+    
+  }
+}
+
 
 .position-relative {
     position: relative; /* Permite posicionar elementos dentro deste container */
