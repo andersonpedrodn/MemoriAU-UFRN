@@ -1,3 +1,8 @@
+main {
+  margin-top: 3%;
+  padding-top: 3%;
+}
+
 .position-relative {
     position: relative; /* Permite posicionar elementos dentro deste container */
     height: 100vh; /* Faz a seção ocupar toda a altura da viewport */
@@ -9,6 +14,7 @@
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     width: 100%; /* A imagem ocupará toda a largura */
+    height: 60%;
     height: auto; /* Mantém a proporção da imagem */
     transform: translate(-50%, -50%); /* Ajusta a imagem para que fique centralizada */
     object-fit: cover; /* Faz com que a imagem preencha o container, cortando o que não couber */
