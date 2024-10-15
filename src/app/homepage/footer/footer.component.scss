@@ -1,0 +1,93 @@
+$azul-escuro: #143F71;
+$backgroundColorRodape: #FFFFFF;
+
+
+.footer-component {
+    display: flex;
+    background-color: $backgroundColorRodape;
+    padding: 20px 0;
+    position: relative;
+    flex-grow: 1;
+}
+
+.footer-container {
+    position: relative;
+    
+}
+
+
+.footer-logo {
+    // position: relative;
+    left: 78px;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo-au {
+    width: 150px;
+    height: auto;
+    margin: 15px;
+}
+   
+.footer-instituicoes {
+    display: flex;
+    position: relative;
+    left: 99px;
+    top: 171px;
+}
+
+.contact-info {
+    position: relative;
+    left: 86px;
+    top: 250px;
+}
+
+
+.footer-nav {
+    // display: flex;
+    justify-content: space-between;
+    flex-basis: 35%;
+    gap: 30px;
+    width: 120px;
+    height: 26px;
+    left: 773px;
+    font-size: 18px;
+    text-decoration: none;
+    
+}   
+
+.footer-social {
+    position: absolute;
+    right: 75px;
+    bottom: 35px;
+    text-align: right;
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .social-links {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-left: 10px;
+
+            a img {
+                width: 24px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    display: flex;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #777;
+}
