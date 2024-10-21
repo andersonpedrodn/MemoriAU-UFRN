@@ -4,57 +4,75 @@ $backgroundColorRodape: #FFFFFF;
 .footer {
     width: 100vw;
     margin: 0;
-    padding: 0;
+    padding: 2rem;
 }
 
 .footer__container {
-    border: 2px solid blue;
     margin: 0px;
     padding: 0px;
     gap: 8px;
     width: 100vw;
+    font-family: "Montserrat", sans-serif;
     
 
     display: grid;
-    grid-template-columns: minmax(400px, 3fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: 200px ;
+    grid-template-columns: minmax(400px, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 200px  ;
     grid-template-areas: 
     "logo quem-somos historia vida-academica" 
     "linha-traste linha-traste linha-traste linha-traste" 
     "item";
 }
 
-.footer__logos{
-    background-color: green;
+.footer__nav__title {
+    color: $azul-escuro;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-.footer__nav {
-    background-color: green;
-    
-}
-.footer_logos {
-    background-color: green;
+.footer__nav__links {
+    font-size: 13px;
+    color: #777;
+    text-decoration: none;
 }
 
-.footer__nav--quemSomos{
-    background-color: green;
-    
+.footer__nav--endereco img{
+    padding: 5px;
+    margin: 5px;
+    margin-right: 10px;
+
 }
 
-.footer__nav--historia{
-    background-color: green;
-    
+.footer__nav--redesSociais a {
+    color: inherit;
+    padding: 5px;
+    margin: 5px;
 }
 
-.footer__nav--vidaAcademica{
-    background-color: green;
+.footer__nav--redesSociais h3 {
+    color: $azul-escuro;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-.footer__nav--linha{
-    background-color: green;
+.footer__nav--linha:nth-child(5){
+    grid-column: 1 / -1;
+    width: 100vw;   
 }
 
+.footer__img__linha{
+    margin-left: 200px;
 
+}
+
+.footer__nav--redesSociais {
+    grid-column: 2 / -1;
+}
+
+.footer__nav--copyright {
+    grid-column: 1 / -1 ;
+   
+}
 
 // .footer-content {
 //     display: flex;
