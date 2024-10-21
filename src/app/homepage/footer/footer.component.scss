@@ -74,106 +74,34 @@ $backgroundColorRodape: #FFFFFF;
    
 }
 
-// .footer-content {
-//     display: flex;
-//     background-color: $backgroundColorRodape;
-//     padding: 20px 0;
-//     position: relative;
-//     flex-grow: 1;
+// .footer__logos {
+//     background-color: orange;
 // }
 
-// .footer-container {
-//     position: relative;
-    
+// .footer__nav--quemSomos{
+//     background-color: green;
 // }
 
-
-// .footer-logo {
-//     // position: relative;
-//     left: 78px;
-//     top: 35px;
-//     display: flex;
-//     flex-direction: column;
-    
+// .footer__nav--historia{
+//     background-color: orange;
 // }
 
-// .logo-au {
-//     width: 150px;
-//     height: auto;
-//     margin: 15px;
-// }
-   
-// .footer-instituicoes {
-//     display: flex;
-//     position: relative;
-//     left: 99px;
-//     top: 171px;
+// .footer__nav--vidaAcademica{
+//     background-color: green;
 // }
 
-// .contact-info {
-//     position: relative;
-//     left: 86px;
-//     top: 250px;
+// .footer__nav--linha{
+//     background-color: rgb(25, 0, 255);
 // }
 
-
-// .footer-nav {
-//     font-family: "Montserrat", sans-serif;
-//     justify-content: space-between;
-//     flex-basis: 35%;
-//     gap: 30px;
-//     width: 120px;
-//     height: 26px;
-//     left: 773px;
-//     font-size: 17px;
-//     text-decoration: none;
-//     white-space: nowrap;
-    
-// }   
-
-// .font-titulo {
-//     color: $azul-escuro;
-//     font-weight: 500;
-//     margin-bottom: 10px;
-//     margin-top: 10px;
+// .footer__nav--endereco{
+//     background-color: orange;
 // }
 
-// .list-unstyled li a {
-//     font-size: 13px;
-//     color: #777;
-
+// .footer__nav--redesSociais{
+//     background-color: green;
 // }
 
-// .footer-social {
-//     position: absolute;
-//     right: 75px;
-//     bottom: 35px;
-//     text-align: right;
-//     p {
-//         font-size: 16px;
-//         margin-bottom: 10px;
-//     }
-//     .social-links {
-//         display: flex;
-//         justify-content: flex-end;
-//         list-style: none;
-//         padding: 0;
-
-//         li {
-//             margin-left: 10px;
-
-//             a img {
-//                 width: 24px;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
-
-// .footer-copyright {
-//     display: flex;
-//     text-align: center;
-//     font-size: 0.9rem;
-//     margin-top: 20px;
-//     color: #777;
+// .footer__nav--copyright{
+//     background-color: blue;
 // }
