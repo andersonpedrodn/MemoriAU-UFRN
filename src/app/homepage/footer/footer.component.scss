@@ -19,9 +19,10 @@ $backgroundColorRodape: #FFFFFF;
     grid-template-columns: minmax(400px, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: 200px  ;
     grid-template-areas: 
-    "logo quem-somos historia vida-academica" 
-    "linha-traste linha-traste linha-traste linha-traste" 
-    "item";
+    "logo qs hs va" 
+    "linha linha linha linha" 
+    "endereco endereco redeSocial redeSocial"
+    "copyright copyright copyright copyright";
 }
 
 .footer__nav__title {
@@ -74,34 +75,59 @@ $backgroundColorRodape: #FFFFFF;
    
 }
 
-// .footer__logos {
-//     background-color: orange;
-// }
+.footer__logos {
+    // background-color: orange;
+    grid-area: logo;
+}
 
-// .footer__nav--quemSomos{
-//     background-color: green;
-// }
+.footer__nav--quemSomos{
+    // background-color: green;
+    grid-area: qs;
+}
 
-// .footer__nav--historia{
-//     background-color: orange;
-// }
+.footer__nav--historia{
+    // background-color: orange;
+    grid-area: hs;
+}
 
-// .footer__nav--vidaAcademica{
-//     background-color: green;
-// }
+.footer__nav--vidaAcademica{
+    // background-color: green;
+    grid-area: va;
+}
 
-// .footer__nav--linha{
-//     background-color: rgb(25, 0, 255);
-// }
+.footer__nav--linha{
+    // background-color: blue;
+    grid-area: linha;
+}
 
-// .footer__nav--endereco{
-//     background-color: orange;
-// }
+.footer__nav--endereco{
+    // background-color: orange;
+    grid-area: endereco;
+}
 
-// .footer__nav--redesSociais{
-//     background-color: green;
-// }
+.footer__nav--redesSociais{
+    // background-color: green;
+    grid-area: redeSocial;
+}
 
-// .footer__nav--copyright{
-//     background-color: blue;
-// }
+.footer__nav--copyright{
+    // background-color: blue;
+    grid-area: copyright;
+}
+
+
+@media only screen and (max-width: 820px) {
+    .footer__container {
+        grid-template-areas: 
+        "logo"
+        "linha"
+        "qs"
+        "hs"
+        "va"
+        "redeSocial"
+        "endereco"
+        "copyright";
+
+    }
+    
+}
