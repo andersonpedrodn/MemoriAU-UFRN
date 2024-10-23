@@ -27,7 +27,8 @@ $backgroundColorRodape: #FFFFFF;
 
 .footer__nav__title {
     color: $azul-escuro;
-    font-weight: 500;
+    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -37,10 +38,15 @@ $backgroundColorRodape: #FFFFFF;
     text-decoration: none;
 }
 
+.footer__nav--endereco{
+    font-size: 14px;
+}
+
 .footer__nav--endereco img{
     padding: 5px;
     margin: 5px;
     margin-right: 10px;
+    
 
 }
 
@@ -48,12 +54,16 @@ $backgroundColorRodape: #FFFFFF;
     color: inherit;
     padding: 5px;
     margin: 5px;
+    font-size: 12px;
 }
 
 .footer__nav--redesSociais h3 {
     color: $azul-escuro;
-    font-weight: 500;
+    font-weight: 600;
+    font-weight: bold;
     margin-bottom: 1rem;
+    text-align: center;
+    margin-right: 30%
 }
 
 .footer__nav--linha:nth-child(5){
@@ -72,6 +82,7 @@ $backgroundColorRodape: #FFFFFF;
 
 .footer__nav--copyright {
     grid-column: 1 / -1 ;
+    font-size: 12px;
    
 }
 
@@ -127,6 +138,32 @@ $backgroundColorRodape: #FFFFFF;
         "redeSocial"
         "endereco"
         "copyright";
+    }
+
+    .footer__nav__title {
+        font-weight: 700;
+    }
+
+    .footer__nav--redesSociais h3 {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .footer__nav--redesSociais{
+        font-size: 15px;
+        
+    }
+
+    .footer__nav--redesSociais img {
+        margin-right: 10px;
+    }
+    .footer__nav--redesSociais a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__nav--copyright{
+        font-size: 13px;
 
     }
     
