@@ -1,6 +1,10 @@
-main {
-  margin-top: 3%;
-  padding-top: 3%;
+.container__hero {
+  height: 100vh;
+  background-image: url("/assets/images/galinheiro2008.png");
+  background-size: cover;
+  background-position: 50px auto 0;
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
 }
 
 .hero {
@@ -13,7 +17,7 @@ main {
   object-fit: cover;
 }
 
-.overlay-box {
+.container__hero--box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,7 +34,7 @@ main {
     z-index: 1;
 }
 
-.overlay-text {
+.container__hero--text {
     position: absolute;
     font-family: "Sora", sans-serif;;
     top: 50%;
@@ -60,8 +64,7 @@ main {
   }
 }
 
-
-.position-relative {
+.container__hero {
     position: relative; /* Permite posicionar elementos dentro deste container */
     height: 100vh; /* Faz a seção ocupar toda a altura da viewport */
     overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o container */
@@ -91,66 +94,29 @@ main {
   }
 
 
-// .hero {
-//     position: relative;
-//     text-align: center;
+  @media only screen and (max-width: 820px) {
+    .container__hero {
+      height: 100vh;
+      background-image: url("/assets/images/galinheiro2008.png");
+      background-size: cover;
+      background-position: 50px auto 0;
+    }
+
+    .container__hero--box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-10%, -50%); /* Centraliza o retângulo */
+      width: 50%; /* Ajuste o tamanho conforme necessário */
+      height: 30%;
+      width: 40%;
+      padding: 20px;
+      background-color: rgba(128, 0, 0, 0.7); /* Cor vermelha com transparência */
+      border-top-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      background-color: #A23838B2;
+      margin-left: 10%;
+      z-index: 1;
+  }
     
-// }
-
-// html {
-//     width: 100%;
-//     margin: 0;
-// }
-
-// .hero-image {
-//     width: 100%;
-//     height: auto;
-    
-    
-// }
-
-// .hero-text-container {
-//     position: absolute;
-//     top: 30%;
-//     left: 50%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-// .hero-text {
-//     font-family: "Sora", serif;
-//     font-size: 96px;
-//     position: absolute;
-//     width: 684.71px;
-//     height: 86px;
-//     color: white;
-//     transform: translate(-40%, 100%);
-//     font-size: 6rem;
-// }
-
-// .subtext-container {
-//     text-align: center;
-//     transform: translate(40%,70%);
-
-// }
-// .subtext {
-//     color: white;
-//     font-size: 1.5rem;
-// }
-
-// .years-text {
-//     color: white; /* Cor do texto */
-//     font-size: 2rem; /* Tamanho da fonte menor para "50 anos de história" */
-//     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra para melhorar a legibilidade */
-//     transform: translate(0%, 250%);
-//     font-size: 2.5rem;
-//     display: inline-block;
-    
-
-//   }
-
-// .years-text span {
-//     transition: opacity 8.0s ease-in-out;
-//     opacity: 1;
-//   }
+    }
