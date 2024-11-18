@@ -19,14 +19,14 @@
 
 .container__hero--box {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 65%;
+    left: 55%;
     transform: translate(-50%, -50%); /* Centraliza o retângulo */
     width: 50%; /* Ajuste o tamanho conforme necessário */
     height: 50%;
-    width: 40%;
+    width: 35%;
     padding: 20px;
-    background-color: rgba(128, 0, 0, 0.7); /* Cor vermelha com transparência */
+    background-color: rgba(128, 0, 0, 0.822); /* Cor vermelha com transparência */
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     background-color: #A23838B2;
@@ -51,6 +51,8 @@
 .hero-text {
   font-size: 5rem;
   font-weight: bold;
+  margin-top: 12rem;
+  margin-left: 21rem;
 }
 
 .years-text {
@@ -93,6 +95,19 @@
     color: rgb(27, 25, 25); /* Define a cor do texto como branca */
   }
 
+
+  .container__titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+
+  }
+  .subtext{
+    float: left;
+    margin-left: 60rem;
+  }
 
   @media only screen and (max-width: 820px) {
     .container__hero {
