@@ -20,19 +20,22 @@ $textPrimary-color: #B3261E;
 }
 
 
-.retangulo {
+    .retangulo {
     background-color: #FFFFFF1A;
-    border-radius: 8px;
+    border-radius: 1px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0 ,0, 0.1);
     max-width: 600px;
     margin: 20px auto;
     border: 1px solid #143F7199;
-
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    
+    
 
     @media (min-width: 768px) {
         padding: 40px;
@@ -45,19 +48,30 @@ $textPrimary-color: #B3261E;
 
 .retangulo p {
     margin: 0 0 10px;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    
+
 }
 
 .saiba-mais {
     display: block;
-    color: #007bff;
     text-decoration: none;
     margin-top: 10px;
+    text-align: right;
+    font-family: 'Yantramanav', sans-serif;
+
 }
 
 .saiba-mais:hover {
     text-decoration: underline;
+}
+
+.saiba-mais a{
+    color: #143F71;
+
 }
 
 .linhaDoTempoFull{
