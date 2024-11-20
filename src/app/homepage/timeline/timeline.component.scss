@@ -16,6 +16,9 @@ $textPrimary-color: #B3261E;
 .titleText {
     color: $textPrimary-color;
     font-family: "Sora", sans-serif;
+    align-items: center;
+    text-align: center;
+    
     
 }
 
@@ -76,6 +79,11 @@ $textPrimary-color: #B3261E;
 
 .linhaDoTempoFull{
     margin-top: 0px;
+}
+
+.timeLine__fundo{
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
