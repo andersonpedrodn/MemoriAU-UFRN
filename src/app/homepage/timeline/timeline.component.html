@@ -16,13 +16,22 @@
 
     <h1 class="titleText has-text-centered subtitle is-2">Linha do tempo</h1>
     <div class="row">
-        <div class="col-2"> 
-            <img src="assets\images\imageHistoricoEscolar.webp" alt="">
-        </div>
-        <div class="col-8 timeLine__fundo">
+        <div class="col-md-3 text-end">
+            <div class="timeline-item mb-4" *ngFor="let item of timelineItems; let i = index">
+                <img 
+                src="{{item.image}}" 
+                alt="{{item.alt}}"
+                class="img-fluid timeline-img"
+                (click)="openModal(item)"
+                style="cursor:pointer;"/>
+            </div> 
+            
+            <!-- <img src="assets\images\imageHistoricoEscolar.webp" alt=""> -->
+        </div>  
+        <div class="col-md-6 timeLine__fundo text">
             <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
         </div>
-        <div class="col-2"> 
+        <div class="col-md-3 text-start"> 
             <img src="assets\images\imagePlantaCampos.webp" alt="">
             <img src="assets\images\imageColacaoGrau.webp" alt="">
 
@@ -38,6 +47,5 @@
         <div class="col-4"></div>
 
     </div>
-
     
 </section>

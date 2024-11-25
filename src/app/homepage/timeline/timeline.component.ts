@@ -11,7 +11,7 @@ export class TimelineComponent {
   timelineItems = [
     { 
       year: 1978, 
-      image: 'assets/img/ano1973.jpg', 
+      image: 'assets/images/imageHistoricoEscolar.webp', 
       alt: 'Planta geral do campus em 1978', 
       description: 'Planta geral do campus em 1978',
       
