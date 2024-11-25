@@ -1,12 +1,10 @@
+/* Definição de cores */
 $textPrimary-color: #B3261E;
 
-
-
-
 .linhaDoTempoInicio{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-timeLine {
@@ -18,12 +16,9 @@ $textPrimary-color: #B3261E;
     font-family: "Sora", sans-serif;
     align-items: center;
     text-align: center;
-    
-    
 }
 
-
-    .retangulo {
+.retangulo {
     background-color: #FFFFFF1A;
     border-radius: 1px;
     padding: 20px;
@@ -37,8 +32,6 @@ $textPrimary-color: #B3261E;
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    
-    
 
     @media (min-width: 768px) {
         padding: 40px;
@@ -55,8 +48,6 @@ $textPrimary-color: #B3261E;
     line-height: 1.7;
     font-family: 'Sora', sans-serif;
     font-weight: 300;
-    
-
 }
 
 .saiba-mais {
@@ -65,7 +56,6 @@ $textPrimary-color: #B3261E;
     margin-top: 10px;
     text-align: right;
     font-family: 'Yantramanav', sans-serif;
-
 }
 
 .saiba-mais:hover {
@@ -74,7 +64,6 @@ $textPrimary-color: #B3261E;
 
 .saiba-mais a{
     color: #143F71;
-
 }
 
 .linhaDoTempoFull{
@@ -90,6 +79,7 @@ h1 {
     margin-bottom: 0px;
     padding: 0px;
 }
+
 button {
     display: flex;
     justify-content: center;
@@ -100,3 +90,75 @@ button {
     margin-bottom: 80px;
 }
 
+/* Estilo para centralizar o modal */
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 100px auto;
+    height: 100%; /* Garantir que o modal ocupe toda a altura da tela */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 900px; /* Limite de largura para o modal */
+    width: 100%;
+    max-height: 80vh; /* Limite de altura para o modal */
+    overflow-y: auto; /* Faz o conteúdo rolar se exceder a altura */
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    color: #000;
+    margin: 0;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Botão de Fechar */
+.modal-header .btn-close {
+    background: none;
+    border: none;
+    color: $textPrimary-color; /* Cor do botão de fechar */
+    font-size: 1.5rem;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 0.7;
+}
+
+/* Estilo para o botão de fechar no modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: none; /* Remover a linha inferior */
+}
+
+/* Modal Body */
+.modal-body {
+    text-align: center; /* Centraliza o conteúdo dentro do corpo do modal */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Para garantir que o modal não ultrapasse a tela */
+@media (max-width: 767px) {
+    .modal-dialog {
+        margin: 20px;
+        max-width: 100%;
+    }
+}

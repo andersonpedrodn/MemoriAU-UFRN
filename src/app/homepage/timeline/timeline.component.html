@@ -17,16 +17,11 @@
     <h1 class="titleText has-text-centered subtitle is-2">Linha do tempo</h1>
     <div class="row">
         <div class="col-md-3 text-end">
-            <div class="timeline-item mb-4" *ngFor="let item of timelineItems; let i = index">
-                <img 
-                src="{{item.image}}" 
-                alt="{{item.alt}}"
-                class="img-fluid timeline-img"
-                (click)="openModal(item)"
-                style="cursor:pointer;"/>
-            </div> 
-            
-            <!-- <img src="assets\images\imageHistoricoEscolar.webp" alt=""> -->
+             <img 
+             src="assets/images/imageHistoricoEscolar.webp" 
+             alt="Thumbnail" 
+             (click)="openModal('assets/images/imageHistoricoEscolarGrande.webp', 'Fonte: Virgínia Araújo', modalContent)"
+             /> 
         </div>  
         <div class="col-md-6 timeLine__fundo text">
             <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
@@ -48,4 +43,17 @@
 
     </div>
     
+
+
+    <!-- Modal -->
+    <ng-template #modalContent let-modal>
+        <div class="modal-header">
+          <h1 class="modal-title">Histórico.</h1>
+          <button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
+        </div>
+        <div class="modal-body">
+          <img [src]="selectedImage" alt="Expanded Image" class="img-fluid" />
+          <p>{{ selectedDescription }}</p>
+        </div>
+      </ng-template>
 </section>
