@@ -5,56 +5,107 @@
             <div class="retangulo box has-text centered">
                 <p>Seja bem-vindo ao portal dedicado à celebração dos 50 anos do Curso de Arquitetura e Urbanismo da Universidade Federal do Rio Grande do Norte (CAU-UFRN). O MemoriAU é um espaço para mergulhar na rica trajetória do curso. Uma celebração do passado, mas que serve também de inspiração para o nosso futuro.</p>
                 <div class="saiba-mais">
-                    <a href="#" class="">Saiba mais     </a>  <img src="assets/icons/iconeSaibaMais.svg" alt="Ícone Link saber mais">
+                    <a href="#" class="">Saiba mais</a>  
+                    <img src="assets/icons/iconeSaibaMais.svg" alt="Ícone Link saber mais">
                 </div>
-                
             </div>
         </div>
-    
     </div>
-
 
     <h1 class="titleText has-text-centered subtitle is-2">Linha do tempo</h1>
     <div class="row">
-        <div class="col-md-3 text-end">
-            <img src="assets/images/imageHistoricoEscolar.webp" (click)="showModal()" alt="Abrir modal" style="cursor: pointer;">
-            <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()"></div>
-            <div *ngIf="isModalOpen" class="modal">
-              <div class="modal-header">
-                <h1>Histórico escolar de aluna da primeira turma do CAU-UFRN.</h1>
-                <button class="close-button" (click)="closeModal()">
-                    <img src="assets/icons/buttonClose.svg" alt="">
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="modal-image-container">
-                <!-- Exibe a imagem atual -->
-                 <img [src]="currentImage" alt="imagem histórico" class="modal-image">
-                  <!-- Botão de imagem anterior -->
-                <button class="prev-button" (click)="prevImage()">
-                    <img src="assets/icons/setaEsquerdaModal.svg" alt="">
-                </button>
-                <!-- Botão de imagem seguinte -->
-                <button class="next-button" (click)="nextImage()">
-                    <img src="assets/icons/setaDireitaModal.svg" alt="">
-                </button>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <p>Fonte: Virgínia Araújo</p>
-              </div>
+        <div class="col-md-3 text-end" >
+            <div *ngFor="let image of imageUmEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
             </div>
-            
-        </div>  
+            <div *ngFor="let image of imageDoisEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div>
+            <div *ngFor="let image of imageTresEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div>
+            <div *ngFor="let image of imageQuatroEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div>
+            <div *ngFor="let image of imageCincoEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div>
+            <div *ngFor="let image of imageSeisEsquerda; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div>
+           
+        </div>
+
         <div class="col-md-6 timeLine__fundo text">
             <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
         </div>
-        <div class="col-md-3 text-start"> 
-            <img src="assets\images\imagePlantaCampos.webp" alt="">
-            <img src="assets\images\imageColacaoGrau.webp" alt="">
 
+        <div class="col-md-3 text-start">
+            <div *ngFor="let image of imageUmDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageDoisDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageTresDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageQuatroDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageCincoDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageSeisDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageSeteDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageOitoDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageNoveDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+            <div *ngFor="let image of imageDezDireita; let i = index">
+                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+            </div> 
+          
         </div>
     </div>
+
+    <!-- Contêiner para todos os modais -->
+    <div class="modal-container">
+        <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()"></div>
+
+        <!-- Modal 1 -->
+        <div *ngIf="isModalOpen" class="modal">
+            <div class="modal-header">
+                <h1>{{ currentTitle }}</h1> 
+                <button class="close-button" (click)="closeModal()">
+                    <img src="assets/icons/buttonClose.svg" alt="Fechar">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img [src]="currentImageSet[currentImageIndex]" alt="imagens" class="modal-image">
+                    <button class="prev-button" (click)="prevImage()" [disabled]="currentImageIndex === 0">
+                        <img src="assets/icons/setaEsquerdaModal.svg" alt="Anterior">
+                    </button>
+                    <button class="next-button" (click)="nextImage()" [disabled]="currentImageIndex === currentImageSet.length - 1">
+                        <img src="assets/icons/setaDireitaModal.svg" alt="Próxima">
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <p>{{ currentSource }}</p>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-2"></div>
         <div class="col-8">
@@ -63,20 +114,5 @@
             </button>
         </div>
         <div class="col-4"></div>
-
     </div>
-    
-
-
-    <!-- Modal -->
-    <!-- <ng-template #modalContent let-modal>
-        <div class="modal-header">
-          <h1 class="modal-title">Histórico.</h1>
-          <button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
-        </div>
-        <div class="modal-body">
-          <img [src]="selectedImage" alt="Expanded Image" class="img-fluid" />
-          <p>{{ selectedDescription }}</p>
-        </div>
-    </ng-template> -->
 </section>

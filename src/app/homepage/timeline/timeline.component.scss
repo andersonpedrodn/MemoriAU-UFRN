@@ -191,7 +191,17 @@ button {
     }
 }
 
+.modal-image {
+    display: block; /* Força cada imagem a ser exibida em uma nova linha */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço entre as imagens */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+  }
 
+  .modal-image-container {
+  display: flex;
+  flex-direction: column; /* As imagens ficam uma abaixo da outra */
+  align-items: center; /* Centraliza as imagens horizontalmente (opcional) */
+}
 button {
     padding: 10px 20px;
     background-color: #007bff;
