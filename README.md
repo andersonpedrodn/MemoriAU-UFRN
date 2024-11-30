@@ -6,6 +6,7 @@ Página de comemoração dos 50 anos do curso de Arquitetura e Urbanismo da UFRN
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
+![Imagem ](src/assets/images/memoAU.png)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
