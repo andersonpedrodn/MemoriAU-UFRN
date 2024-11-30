@@ -1,6 +1,6 @@
 <section class="main-timeLine">
     <div class="row">
-        <div class="container">
+        <div class="container"> 
             <img src="assets/images/linhaDoTempoInicio.svg" alt="" class="linhaDoTempoInicio">
             <div class="retangulo box has-text centered">
                 <p>Seja bem-vindo ao portal dedicado à celebração dos 50 anos do Curso de Arquitetura e Urbanismo da Universidade Federal do Rio Grande do Norte (CAU-UFRN). O MemoriAU é um espaço para mergulhar na rica trajetória do curso. Uma celebração do passado, mas que serve também de inspiração para o nosso futuro.</p>
@@ -17,11 +17,23 @@
     <h1 class="titleText has-text-centered subtitle is-2">Linha do tempo</h1>
     <div class="row">
         <div class="col-md-3 text-end">
-             <img 
-             src="assets/images/imageHistoricoEscolar.webp" 
-             alt="Thumbnail" 
-             (click)="openModal('assets/images/imageHistoricoEscolarGrande.webp', 'Fonte: Virgínia Araújo', modalContent)"
-             /> 
+            <img src="assets/images/imageHistoricoEscolar.webp" (click)="showModal()" alt="Abrir modal" style="cursor: pointer;">
+            
+            <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()"></div>
+            <div *ngIf="isModalOpen" class="modal">
+              <div class="modal-header">
+                <h1>Histórico escolar de aluna da primeira turma do CAU-UFRN.</h1>
+                <button class="close-button" (click)="closeModal()">
+                    <img src="assets/icons/buttonClose.svg" alt="">
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="assets/images/imageHistoricoEscolarGrande.webp" alt="">
+              </div>
+              <div class="modal-footer">
+                <p>Fonte: Virgínia Araújo</p>
+              </div>
+            </div>
         </div>  
         <div class="col-md-6 timeLine__fundo text">
             <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
@@ -46,7 +58,7 @@
 
 
     <!-- Modal -->
-    <ng-template #modalContent let-modal>
+    <!-- <ng-template #modalContent let-modal>
         <div class="modal-header">
           <h1 class="modal-title">Histórico.</h1>
           <button type="button" class="btn-close" aria-label="Close" (click)="modal.close()"></button>
@@ -55,5 +67,5 @@
           <img [src]="selectedImage" alt="Expanded Image" class="img-fluid" />
           <p>{{ selectedDescription }}</p>
         </div>
-      </ng-template>
+    </ng-template> -->
 </section>

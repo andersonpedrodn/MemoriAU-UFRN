@@ -1,22 +1,32 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-timeline',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
+  isModalOpen: boolean = false;
 
-  constructor(private modalService: NgbModal){
-    
+  showModal() {
+    this.isModalOpen = true;
   }
 
-  isModalVisible = false; //Controle da visibilidade do modal
-  selectedImage: string = ''; //Caminho da imagem 
-  selectedDescription: string = ''; //Descrição da imagem
+  closeModal() {
+    this.isModalOpen = false;
+  }
+
+  // constructor(private modalService: NgbModal){
+    
+  // }
+
+  // isModalVisible = false; //Controle da visibilidade do modal
+  // selectedImage: string = ''; //Caminho da imagem 
+  // selectedDescription: string = ''; //Descrição da imagem
 
   // timelineItems = [
   //   { 
@@ -105,16 +115,16 @@ export class TimelineComponent {
 
   
   // Função para abrir o modal
-  openModal(imageSrc: string, description: string, content: any) {
-    this.selectedImage = imageSrc;
-    this.selectedDescription = description;
-    this.modalService.open(content);
-  }
+//   openModal(imageSrc: string, description: string, content: any) {
+//     this.selectedImage = imageSrc;
+//     this.selectedDescription = description;
+//     this.modalService.open(content);
+//   }
 
-//  //Fechar modal
-    closeModal() {
-    this.isModalVisible = false;
-    }
+// //  //Fechar modal
+//     closeModal() {
+//     this.isModalVisible = false;
+//     }
 } 
 
   
