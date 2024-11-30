@@ -18,7 +18,6 @@
     <div class="row">
         <div class="col-md-3 text-end">
             <img src="assets/images/imageHistoricoEscolar.webp" (click)="showModal()" alt="Abrir modal" style="cursor: pointer;">
-            
             <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()"></div>
             <div *ngIf="isModalOpen" class="modal">
               <div class="modal-header">
@@ -28,12 +27,24 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img src="assets/images/imageHistoricoEscolarGrande.webp" alt="">
+                <div class="modal-image-container">
+                <!-- Exibe a imagem atual -->
+                 <img [src]="currentImage" alt="imagem histórico" class="modal-image">
+                  <!-- Botão de imagem anterior -->
+                <button class="prev-button" (click)="prevImage()">
+                    <img src="assets/icons/setaEsquerdaModal.svg" alt="">
+                </button>
+                <!-- Botão de imagem seguinte -->
+                <button class="next-button" (click)="nextImage()">
+                    <img src="assets/icons/setaDireitaModal.svg" alt="">
+                </button>
+                </div>
               </div>
               <div class="modal-footer">
                 <p>Fonte: Virgínia Araújo</p>
               </div>
             </div>
+            
         </div>  
         <div class="col-md-6 timeLine__fundo text">
             <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">

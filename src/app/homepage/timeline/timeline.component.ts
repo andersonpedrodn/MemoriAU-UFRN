@@ -10,14 +10,41 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent {
+  //controle da visibilidade do modal
   isModalOpen: boolean = false;
+
+  //Imagens a serem exibididas no modal
+  historicoEscolarGrande = 'assets/images/imageHistoricoEscolarGrande.webp';
+  historicoEscolarGrandeVerso = 'assets/images/imageHistoricoEscolarGrandeVerso.webp'
+
+  //variável para armazenar a imagem atual do modal
+  currentImage: string = this.historicoEscolarGrande
 
   showModal() {
     this.isModalOpen = true;
+    this.currentImage = this.historicoEscolarGrande;
   }
 
   closeModal() {
     this.isModalOpen = false;
+  }
+
+  //Avançar para a próxima imagem
+  nextImage(){
+    if (this.currentImage === this.historicoEscolarGrande){
+      this.currentImage = this.historicoEscolarGrandeVerso; //Avança para a segunda imagem
+    }else {
+      this.currentImage = this.historicoEscolarGrande
+    }
+  }
+
+  //Volta para a imagem anterior
+  prevImage(){
+    if(this.currentImage === this.historicoEscolarGrandeVerso){
+      this.currentImage = this.historicoEscolarGrande
+    }else{
+      this.currentImage = this.historicoEscolarGrandeVerso;
+    }
   }
 
   // constructor(private modalService: NgbModal){
