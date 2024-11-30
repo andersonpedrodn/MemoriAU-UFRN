@@ -44,9 +44,10 @@
             <div *ngFor="let image of imageUmDireita; let i = index">
                 <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
             </div> 
+            
             <div *ngFor="let image of imageDoisDireita; let i = index">
                 <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
+              </div>   
             <div *ngFor="let image of imageTresDireita; let i = index">
                 <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
             </div> 
@@ -76,7 +77,7 @@
     </div>
 
     <!-- Contêiner para todos os modais -->
-    <div class="modal-container">
+    <div class="modal-container"    >
         <div *ngIf="isModalOpen" class="modal-overlay" (click)="closeModal()"></div>
 
         <!-- Modal 1 -->
@@ -90,7 +91,7 @@
 
             <div class="modal-body">
                 <div class="modal-image-container">
-                    <img [src]="currentImageSet[currentImageIndex]" alt="imagens" class="modal-image">
+                    <img [src]="currentImageSet[currentImageIndex].src" alt="imagens" class="modal-image">
                     <button class="prev-button" (click)="prevImage()" [disabled]="currentImageIndex === 0">
                         <img src="assets/icons/setaEsquerdaModal.svg" alt="Anterior">
                     </button>

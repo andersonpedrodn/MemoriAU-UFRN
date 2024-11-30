@@ -184,12 +184,7 @@ button {
     justify-content: flex-end;
 }
 /* Para garantir que o modal não ultrapasse a tela */
-@media (max-width: 767px) {
-    .modal-dialog {
-        margin: 20px;
-        max-width: 100%;
-    }
-}
+
 
 .modal-image {
     display: block; /* Força cada imagem a ser exibida em uma nova linha */
@@ -278,3 +273,15 @@ button {
     cursor: pointer;
    
   }
+  .modal img {
+    max-width: 100%; /* A imagem não pode ultrapassar a largura do modal */
+    max-height: 50vh; /* A imagem não pode ultrapassar 80% da altura da janela */
+    object-fit: contain; /* A imagem será redimensionada mantendo sua proporção */
+  }
+
+  @media (max-width: 767px) {
+    .modal-dialog {
+        margin: 20px;
+        max-width: 100%;
+    }
+}
