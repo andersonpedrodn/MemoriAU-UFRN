@@ -162,13 +162,18 @@ export class TimelineComponent {
         },
         {
           src: 'assets/images/imageConviteFormaturaFull.webp',
-          title: 'Convite de formatura da turma de Enganharia de 1978',
-          source: 'Fonte: Acervo Histórico da UFRN',
+          title: 'Convite de formatura da primeira turma do CAU-UFRN',
+          source: 'Fonte: Acervo BCZM',
         },
         {
           src:'assets/images/imageConviteFormaturaVersoFull.webp',
-          title: 'Verso do convite de formatura da turma de Enganharia de 1978',
-          source: 'Fonte: Acervo Histórico da UFRN',
+          title: 'Verso - Convite de formatura da primeira turma do CAU-UFRN',
+          source: 'Fonte: Acervo BCZM',
+        },  
+        {
+          src:'assets/images/imageFormaturaTodosCursosFull.webp',
+          title: 'Foto da formatura de todos os cursos da UFRN em 1978',
+          source: 'Fonte: Acervo BCZM',
         }  
       ],
       title: 'Histórico escolar de aluna da primeira turma do CAU-UFRN.',
@@ -200,7 +205,7 @@ export class TimelineComponent {
       relatedImages: [
         {
           src: 'assets/images/imageCapaPrimeiraRevistaPenasFull.webp', // Capa do álbum colação de grau
-          title: 'Capa da primeira edição da Revista Penas.',
+          title: 'Capa da primeira edição da Revista Penas',
           source: ''
         }
       ], 
@@ -247,7 +252,7 @@ export class TimelineComponent {
         },
         {
           src: 'assets/images/imageVisitaConselhoFull.webp', // Capa do álbum colação de grau
-          title: 'Visita do Conselho',
+          title: 'Visita do Conselho de Arquitetura e Urbanismo - CAU/BR ao curso de Arquitetura e Urbanismo da UFRN, durante o processo de Acreditação',
           source: 'Fonte: CAU-BR'
         }
       ], 
@@ -266,8 +271,8 @@ export class TimelineComponent {
         },
         {
           src: 'assets/images/imageInauguracao2NEAUFull.webp', // Capa do álbum colação de grau
-          title: 'Inauguração do NEAU - Segunda Imagem',
-          source: 'Fonte: Glauce Albuquerque'
+          title: 'Inauguração do NEAU',
+          source: 'Fonte: Cícero Oliveira'
         }
       ], 
       title: 'Certificação de acreditação',
@@ -279,13 +284,13 @@ export class TimelineComponent {
       thumb: 'assets/images/imagePlacaPraca.webp', 
       relatedImages: [
         {
-          src: 'assets/images/imagePlacaPracaFull.webp', // Capa do álbum colação de grau
-          title: 'Inauguração da Placa da Praça - Imagem 1',
+          src: 'assets/images/imagePlacaPracaFull.webp', 
+          title: 'Inauguração da Placa da Praça',
           source: 'Fonte: Conselho de Arquitetura e Urbanismo CAU-RN'
         },
         {
-          src: 'assets/images/imagePlacaPraca2Full.webp', // Capa do álbum colação de grau
-          title: 'Inauguração da Placa da Praça - Imagem 2',
+          src: 'assets/images/imagePlacaPraca2Full.webp', 
+          title: 'Inauguração da Placa da Praça',
           source: 'Fonte: Conselho de Arquitetura e Urbanismo CAU-RN'
         }
       ], 
@@ -298,13 +303,13 @@ export class TimelineComponent {
       thumb: 'assets/images/imageSolenidade.webp', 
       relatedImages: [
         {
-          src: 'assets/images/imageSolenidadeFull.webp', // Capa do álbum colação de grau
-          title: 'Solenidade na Câmara Municipal de Natal - Imagem 1',
+          src: 'assets/images/imageSolenidadeFull.webp', 
+          title: 'Solenidade na Câmara Municipal de Natal',
           source: 'Fonte: Verônica Macedo'
         },
         {
-          src: 'assets/images/imageSolenidade2Full.webp', // Capa do álbum colação de grau
-          title: 'Solenidade na Câmara Municipal de Natal - Imagem 2',
+          src: 'assets/images/imageSolenidade2Full.webp', 
+          title: 'Solenidade na Câmara Municipal de Natal',
           source: 'Fonte: Verônica Macedo'
         }
       ], 

@@ -13,66 +13,68 @@
     </div>
 
     <h1 class="titleText has-text-centered subtitle is-2">Linha do tempo</h1>
-    <div class="row">
-        <div class="col-md-3 text-end" >
-            <div *ngFor="let image of imageUmEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+    <div class="timeline-container">
+        <div class="row">
+            <!-- Coluna Esquerda -->
+            <div class="col-md-3 text-end">
+                <div *ngFor="let image of imageUmEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-1">
+                </div>
+                <div *ngFor="let image of imageDoisEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-2">
+                </div>
+                <div *ngFor="let image of imageTresEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-3">
+                </div>
+                <div *ngFor="let image of imageQuatroEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-4">
+                </div>
+                <div *ngFor="let image of imageCincoEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-5">
+                </div>
+                <div *ngFor="let image of imageSeisEsquerda; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-esquerda-6">
+                </div>
             </div>
-            <div *ngFor="let image of imageDoisEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+    
+            <!-- Coluna Central (Linha do Tempo) -->
+            <div class="col-md-6 timeLine__fundo text">
+                <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
             </div>
-            <div *ngFor="let image of imageTresEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
+    
+            <!-- Coluna Direita -->
+            <div class="col-md-3 text-start">
+                <div *ngFor="let image of imageUmDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-1">
+                </div>
+                <div *ngFor="let image of imageDoisDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-2">
+                </div>
+                <div *ngFor="let image of imageTresDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-3">
+                </div>
+                <div *ngFor="let image of imageQuatroDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-4">
+                </div>
+                <div *ngFor="let image of imageCincoDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-5">
+                </div>
+                <div *ngFor="let image of imageSeisDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-6">
+                </div>
+                <div *ngFor="let image of imageSeteDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-7">
+                </div>
+                <div *ngFor="let image of imageOitoDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-8">
+                </div>
+                <div *ngFor="let image of imageNoveDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-9">
+                </div>
+                <div *ngFor="let image of imageDezDireita; let i = index">
+                    <img [src]="image.thumb" (click)="showModal(image)" alt="Solenidade na Câmara Municipal de Natal" class="imagem-direita-10">
+                </div>
             </div>
-            <div *ngFor="let image of imageQuatroEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div>
-            <div *ngFor="let image of imageCincoEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div>
-            <div *ngFor="let image of imageSeisEsquerda; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div>
-           
-        </div>
-
-        <div class="col-md-6 timeLine__fundo text">
-            <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
-        </div>
-
-        <div class="col-md-3 text-start">
-            <div *ngFor="let image of imageUmDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            
-            <div *ngFor="let image of imageDoisDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-              </div>   
-            <div *ngFor="let image of imageTresDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageQuatroDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageCincoDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageSeisDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageSeteDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageOitoDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageNoveDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-            <div *ngFor="let image of imageDezDireita; let i = index">
-                <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" style="cursor: pointer;">
-            </div> 
-          
         </div>
     </div>
 

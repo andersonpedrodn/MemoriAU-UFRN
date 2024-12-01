@@ -1,6 +1,193 @@
 /* Definição de cores */
 $textPrimary-color: #B3261E;
 
+/* Contêiner principal */
+.timeline-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Linha do tempo */
+.linhaDoTempoFull {
+    width: 100%;
+    display: block;
+}
+
+/* Estilos base para imagens */
+.imagem-esquerda,
+.imagem-direita {
+    position: absolute;
+    cursor: pointer;
+    // width: 50px; /* ou ajuste conforme necessário */
+}
+
+.imagem-esquerda-1 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 17vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 335vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 12vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+
+.imagem-esquerda-2 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 17vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 309vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 15vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+
+.imagem-esquerda-3 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 15vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 267vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 17vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+.imagem-esquerda-4 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 25vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 200vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 12vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+.imagem-esquerda-5 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 21vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 145vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 12vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+.imagem-esquerda-6 {
+  position: absolute;  /* Posicionamento absoluto para controlar o movimento */
+  float: left;  /* Flutua a imagem à esquerda */
+  margin-left: 15vw;  /* Ajusta a margem à esquerda (como você fez com a direita) */
+  bottom: 70vw;  /* Alinha a imagem com o final do contêiner */
+  left: 10%;  /* Define a distância do lado esquerdo, ajustando conforme necessário */
+  width: 15vw;  /* Ajuste conforme o tamanho desejado */
+  cursor: pointer;  /* Mantém o cursor interativo */
+}
+
+.imagem-direita-1{
+  position: absolute;
+  float: right;
+  margin-right: 17vw;
+  bottom: 350vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 12vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-2{
+  position: absolute;
+  float: right;
+  margin-right: 17vw;
+  bottom: 318vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 12vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+
+.imagem-direita-3{
+  position: absolute;
+  float: right;
+  margin-right: 17vw;
+  bottom: 237vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 18vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-4{
+  position: absolute;
+  float: right;
+  margin-right: 24vw;
+  bottom: 190vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 12vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-5{
+  position: absolute;
+  float: right;
+  margin-right: 15vw;
+  bottom: 160vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 12vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-6{
+  position: absolute;
+  float: right;
+  margin-right: 15vw;
+  bottom: 120vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 12vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-7{
+  position: absolute;
+  float: right;
+  margin-right: 16vw;
+  bottom: 87vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 15vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-8{
+  position: absolute;
+  float: right;
+  margin-right: 18vw;
+  bottom: 60vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 13vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.imagem-direita-9{
+  position: absolute;
+  float: right;
+  margin-right: 18vw;
+  bottom: 24vw; /* Alinha a imagem com o final do contêiner */
+  right: 10%; /* Define a distância do lado direito */
+  width: 13vw; /* Ajuste conforme o tamanho desejado */
+  cursor: pointer; /* Mantém o cursor interativo */
+}
+
+
+.imagem-direita-10{
+    position: absolute;
+    float: right;
+    margin-right: 20vw;
+    bottom: 3vw; /* Alinha a imagem com o final do contêiner */
+    right: 10%; /* Define a distância do lado direito */
+    width: 15vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+}
+
+
+
 .linhaDoTempoInicio{
     display: block;
     margin-left: auto;
@@ -35,6 +222,7 @@ $textPrimary-color: #B3261E;
 
     @media (min-width: 768px) {
         padding: 40px;
+
     }
 
     @media (max-width: 768px) {
@@ -84,7 +272,7 @@ h1 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     font-size: 30px;
@@ -99,16 +287,6 @@ h1 {
   .next-button {
     right: 10px;
   }
-
-button {
-    display: flex;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 80px;
-}
 
 .prev-button:hover, .next-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -199,13 +377,21 @@ button {
 }
 button {
     padding: 10px 20px;
-    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
 
+  button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -279,9 +465,14 @@ button {
     object-fit: contain; /* A imagem será redimensionada mantendo sua proporção */
   }
 
+  
+
+  
   @media (max-width: 767px) {
     .modal-dialog {
         margin: 20px;
         max-width: 100%;
     }
+
+
 }
