@@ -44,6 +44,9 @@
     
             <!-- Coluna Direita -->
             <div class="col-md-3 text-start">
+                <button (click)="scrollToEnd()" class="botao-direita-desce">
+                    <img src="assets/icons/botaoDesce.svg" alt="">
+                </button>
                 <div *ngFor="let image of imageUmDireita; let i = index">
                     <img [src]="image.thumb" (click)="showModal(image)" alt="Abrir modal" class="imagem-direita-1">
                 </div>
@@ -74,7 +77,11 @@
                 <div *ngFor="let image of imageDezDireita; let i = index">
                     <img [src]="image.thumb" (click)="showModal(image)" alt="Solenidade na Câmara Municipal de Natal" class="imagem-direita-10">
                 </div>
+                <button (click)="scrollToTop()" class="botao-direita-sobe">
+                    <img src="assets/icons/botaoSobe.svg" alt="">
+                </button>
             </div>
+
         </div>
     </div>
 
@@ -118,4 +125,5 @@
         </div>
         <div class="col-4"></div>
     </div>
+    <div id="end"></div>
 </section>

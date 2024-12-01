@@ -186,6 +186,25 @@ $textPrimary-color: #B3261E;
     cursor: pointer; /* Mantém o cursor interativo */
 }
 
+.botao-direita-desce{
+    position: absolute;
+    float: right;
+    margin-right: 5vw;
+    bottom: 375vw; /* Alinha a imagem com o final do contêiner */
+    right: 10%; /* Define a distância do lado direito */
+    width: 15vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+}
+
+.botao-direita-sobe{
+  position: absolute;
+    float: right;
+    margin-right: 5vw;
+    bottom: 1vw; /* Alinha a imagem com o final do contêiner */
+    right: 10%; /* Define a distância do lado direito */
+    width: 15vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+}
 
 
 .linhaDoTempoInicio{

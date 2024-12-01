@@ -35,7 +35,14 @@ export class TimelineComponent {
   currentSource: string= ''; // Fonte da imagem atual
   currentTitle: string= '';  // Título da imagem atual
 
-
+  // Função para rolar até o final
+  scrollToEnd() {
+    document.getElementById('end')?.scrollIntoView({behavior:'smooth'});
+  }
+   // Função para rolar até o topo
+   scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   //Imagens a serem exibididas no modal
   imageUmEsquerda = [
     { 
