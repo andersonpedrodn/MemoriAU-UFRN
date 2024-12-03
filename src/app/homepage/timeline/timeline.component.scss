@@ -347,6 +347,21 @@ h1 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    
+}
+
+
+.modal h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 4vw;
+  margin-left: 2vw;
+}
+
+.modal p {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+
 }
 
 /* Botão de Fechar */

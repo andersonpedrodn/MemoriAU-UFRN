@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component} from '@angular/core';
 
 @Component({
-  selector: 'app-homepage',
+  selector: 'app-herobanner',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './homepage.component.html',
-  styleUrl: './homepage.component.scss'
+  templateUrl: './herobanner.component.html',
+  styleUrl: './herobanner.component.scss'
 })
-export class HomepageComponent {
+export class HerobannerComponent {
   palavraDinamica: string = 'história';
   palavras: string[] = ['história', 'pesquisa', 'ensino', 'premiações', 'legado', 'extensão'];
   palavraIndex: number = 0;
