@@ -16,8 +16,8 @@
     <div [ngClass]="{'is-active': isBurgerOpen}" class="navbar-menu pr-4 mr-4" id="nav-links">
       <div class="navbar-end">
         <a href="" class="navbar-item">Linha do tempo</a>
-        <a href="" class="navbar-item">Sobre</a>
-        <a href="" class="navbar-item">Dados do curso</a>
+        <a routerLink="/sobre" class="navbar-item">Sobre</a>
+        <a routerLink="/dados" class="navbar-item">Dados do curso</a>
 
         <div class="navbar-item has-dropdown" 
         [ngClass]="{'is-active': isDropdownOpen}" (mouseenter)="toggleDropdown(true)" (mouseleave)="toggleDropdown(false)">

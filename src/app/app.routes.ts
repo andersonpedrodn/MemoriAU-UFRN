@@ -22,4 +22,4 @@ export const routes: Routes = [
         title: 'Dados do Curso',
         component: DadosDoCursoComponent,
     }
-];
+];  
