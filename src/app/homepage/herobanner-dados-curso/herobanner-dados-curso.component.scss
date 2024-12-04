@@ -1,13 +1,247 @@
 .container__hero {
+  width: 100%;
+  height: 200vh;
+  background-color: rgba(171, 64, 64, 0.9);
+  background-image: url("/../assets/images/setaHeroBannerDados1.svg"), url("/../assets/images/setaHeroBannerDados2.svg");
+  background-position: center 30vw , center 60vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.container__infoDados {
+  display: flex; /* Usamos flex para alinhar os elementos */
+  justify-content: space-between; /* Espaço entre os dois blocos */
+  align-items: center; /* Alinha os elementos verticalmente */
+  padding: 200px 10vw 0; /* Espaçamento do topo e laterais */
+  position: relative;
+  z-index: 2;
+}
+
+.infoDados--curso {
+  font-size: 3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.infoDados--number {
+  font-size: 10vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.infoDados--p {
+  font-size: 1.3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
+.ativos--number {
+  font-size: 3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-left: 1.3vw;
+}
+
+.ativos--p {
+  font-size: 1.2vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-right: 6vw;
+  
+}
+
+.container__infoDocentes{
+  display: flex; /* Usamos flex para alinhar os elementos */
+  justify-content: space-between; /* Espaço entre os dois blocos */
+  align-items: center; /* Alinha os elementos verticalmente */
+  padding: 200px 10vw 0; /* Espaçamento do topo e laterais */
+  position: relative;
+  z-index: 2;
+
+}
+
+.infoDocentes--docentes{
+  font-size: 3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-top: 10vw;
+
+}
+
+.docentes--number{
+  font-size: 3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-left: 1.3vw;
+  padding-top: 10vw;
+  text-align: center;
+}
+
+.docentes--p{
+  font-size: 1.2vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-right: 6vw;
+  padding-left: 7vw;
+}
+
+.container__infoFuncionarios{
+  display: flex; /* Usamos flex para alinhar os elementos */
+  justify-content: space-between; /* Espaço entre os dois blocos */
+  align-items: center; /* Alinha os elementos verticalmente */
+  padding: 200px 10vw 0; /* Espaçamento do topo e laterais */
+  position: relative;
+  z-index: 2;
+}
+
+.funcionarios--h{
+  font-size: 2.0vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-top: 20vw;
+}
+
+.funcionarios--number{
+  font-size: 3vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding-left: 1.3vw;
+  padding-top: 17vw;
+  text-align: center;
+
+}
+
+.funcionarios--p{
+  font-size: 1.2vw;
+  font-family: 'Sora', sans-serif;
+  color: white;
+  font-weight: 500;
+  margin-right: 6vw;
+  padding-left: 7vw;
+  
+}
+
+@media (max-width: 768px) {
+  .container__hero {
     width: 100%;
-    height: 200vh;
+    height: 150vh;
     background-color: rgba(171, 64, 64, 0.9);
     background-image: url("/../assets/images/setaHeroBannerDados1.svg"), url("/../assets/images/setaHeroBannerDados2.svg");
-    background-position: center 30vw , center 60vw;
-    background-size: contain; /* Garante que a imagem caiba no contêiner */
-    background-repeat: no-repeat, no-repeat ;
-    
-    position: relative; /* Evita problemas com outros elementos */
-    z-index: 1; /* Garante visibilidade */
+    background-position: center 120vw , center 250vw;
+    background-size:200% auto, 230% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+   
+  }
+
+
+
+  .container__infoDados {
+      flex-direction: column; /* Organiza os elementos em coluna */
+      align-items: center;
+      padding: 100px 0vw 0;
+      
+  }
+
+ 
+  .infoDados--curso{
+    font-size: 7vw;
+    text-align: center;
+    padding-top: 8vw;
+  }
+  .infoDados--number{
+    font-size: 15vw;
+    text-align: center;
+    padding-top: 8vw;
+  }
+
+  .infoDados--p{
+    font-size: 10vw;
+    text-align: center;
+   
+  }
+
+  .ativos--number{
+    padding-top: 20vw;
+    font-size: 10vw;
+    text-align: center ;
+  }
+
+  .ativos--p{
+    padding-top: 3vw;
+    font-size: 10vw;
+    text-align: center;
+    margin-left: 7vw;
   }
   
+
+  .infoDados--p,
+  .ativos--p {
+      font-size: 3vw;
+      text-align: center;
+  }
+
+  .container__infoDocentes{
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center;
+    padding-top: 60vw;
+  
+  }
+
+  .infoDocentes--docentes{
+    font-size: 6vw;
+    align-items: center;
+   
+
+  }
+
+  .docentes--number{
+    font-size: 8vw;
+    text-align: center;
+
+  }
+
+  .docentes--p{
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    text-align: center;
+
+  }
+  .container__infoFuncionarios{
+    flex-direction: column; 
+    align-items: center;
+    padding: 100px 5vw 0;
+    padding-top: 40vw;
+  }
+
+  .funcionarios--h{
+    font-size: 5vw;
+    text-align: center;
+    
+  }
+
+  .funcionarios--number{
+    font-size: 8vw;
+    text-align: center;
+    padding-top: 8vw;
+  }
+
+  .funcionarios--p{
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 3vw;
+  }
+}
