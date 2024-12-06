@@ -5,7 +5,7 @@
     position: relative;
     padding-top: 2.5vw;
     
-    // padding: 3vw;
+   
 
 }
 
@@ -150,18 +150,92 @@
   .creditos--h{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding-top: 15px;
-        padding-bottom: 20px;
+        padding-bottom: 1px;
         padding-left: 90px;
         text-align: justify;
         font-size: 1vw;
         font-weight: 600;
-        color: rgb(19, 19, 125);
+        color: rgb(20, 63, 113);
   }
 
   .creditos--p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 90px;
     text-align: justify;
     font-size: 1vw;
   }
+
+  .creditos--coodenadora{
+    padding: 10px;
+  }
+  .creditos--coodenadoraAdjunta{
+    padding: 10px;
+  }
+  .creditos--docentes{
+    padding: 10px;
+  }
+  .creditos--desenvolvedor{
+    padding: 10px;
+  }
+  .creditos--design{
+    padding: 10px;
+  }
+
+  
+
+  @media (max-width: 767px) {
+
+    .container__hero{
+      width: 100%;
+      height: 300vh;
+      background-color: rgba(241, 236, 225, 0.9);
+      position: relative;
+      padding-top: 2.5vw;
+      
+
+  }
+
+    /* Ajustando título e texto */
+    .main--titulo {
+        font-size: 5vw; /* Ajuste do tamanho do título */
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .main--p {
+        font-size: 4vw; /* Ajuste do tamanho do parágrafo */
+        padding: 20px;
+    }
+
+    /* Ajustando as seções de informação */
+    .section__info .info--p1,
+    .section__info .info--p2,
+    .section__info .info--p3,
+    .section__info .info--p4 {
+        width: 100%;
+        padding: 4vw;
+    }
+
+    /* Ajustando retângulo de curriculo */
+    .retangulo__curriculo {
+        padding: 30px;
+        height: auto;
+    }
+
+    /* Ajustando botões */
+    #button-container button {
+        flex: 1 1 calc(50% - 10px); /* Ajustando botões para caberem em 2 colunas */
+    }
+
+    /* Ajustando título de créditos */
+    .creditos__titulo {
+        font-size: 4vw;
+        padding: 50px;
+    }
+
+    .creditos--h, .creditos--p {
+        font-size: 4vw;
+    }
+}

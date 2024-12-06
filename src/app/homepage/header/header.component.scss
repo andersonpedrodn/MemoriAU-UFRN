@@ -19,7 +19,7 @@ $backgroundNavbar-color: #FFFFFFC2;
 .navbar-menu {
   background-color: rgba(255, 255, 255, 0.8);
   font-family: "Montserrat", sans-serif;
-  color:#143F71;
+  color:#031222;
   background-color: $backgroundNavbar-color;
 
   
@@ -38,50 +38,16 @@ $backgroundNavbar-color: #FFFFFFC2;
 }
 
 
-// header {
-//     background-color: #f9f9f9;
-//     padding: 10px;
+@media (max-width: 767px) {
   
-//     .news-bar {
-//       background-color: #e9ecef;
-//       color: #333;
-//       padding: 10px;
-//       font-size: 0.9rem;
-//       border-bottom: 1px solid #ccc;
-      
-//       p {
-//         margin: 0;
-//         display: flex;
-//         justify-content: space-between;
-//       }
+  .navbar-item{
+    width: 80vw;
+    padding-left: 0;
+  }
+    
+  .navbar-item img{ 
+    padding-left: 0;
+  }
+
   
-//       a {
-//         color: red; /* Cor de destaque para o link */
-//         text-decoration: underline;
-//       }
-//     }
-  
-//     nav {
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       padding: 10px 0;
-  
-//       img {
-//         max-width: 150px;
-//       }
-  
-//       ul {
-//         list-style: none;
-//         display: flex;
-//         gap: 20px;
-  
-//         li a {
-//           text-decoration: none;
-//           color: #333;
-//           font-weight: bold;
-//         }
-//       }
-//     }
-//   }
-  
+}

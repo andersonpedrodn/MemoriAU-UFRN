@@ -192,29 +192,90 @@ margin-left: 15px;
     margin-left: 60rem;
   }
 
-  @media only screen and (max-width: 820px) {
-    .container__hero {
-      height: 100vh;
-      background-image: url("/assets/images/galinheiro2008.png");
-      background-size: cover;
-      background-position: 50px auto 0;
+    @media (max-width: 767px) {
+
+      .container__hero {
+        height: 75vh;
+        background-size: cover;
+        background-position: 40%  90%;
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center center;
+        // background-repeat: no-repeat;
+        
+      }
+
+    
+      .container__hero--box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -30%); /* Centraliza o retângulo */
+        width: 50%; /* Ajuste o tamanho conforme necessário */
+        height: 25%;
+        width: 40%;
+        padding: 20px;
+        background-color: rgba(128, 0, 0, 0.7); /* Cor vermelha com transparência */
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        background-color: #A23838B2;
+        margin-left: 10%;
+        z-index: 1;
     }
 
-    .container__hero--box {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-10%, -50%); /* Centraliza o retângulo */
-      width: 50%; /* Ajuste o tamanho conforme necessário */
-      height: 30%;
-      width: 40%;
-      padding: 20px;
-      background-color: rgba(128, 0, 0, 0.7); /* Cor vermelha com transparência */
-      border-top-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      background-color: #A23838B2;
-      margin-left: 10%;
-      z-index: 1;
-  }
-    
+    .content__titulo--1{
+      display: flex;
+      position: relative;
+      text-align: left;
+      margin-bottom: 0px;
+      margin: 15px;
+      font-family: 'Sora', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-right: 0rem;
+      top: -25%;
+      left: 30%;
+      
     }
+
+    .content__titulo--2{
+      display: flex;
+      flex-direction: column; /* Para alinhar os itens verticalmente */
+      align-items: flex-start; /* Alinhar o conteúdo ao centro */
+      text-align: left; /* Certificar-se de que o texto será centralizado */
+      padding-bottom: 7vh; /* Remover margens que podem estar deslocando o conteúdo */
+
+    }
+
+    .line1, .line2, .line3 {
+      font-size: 1.1rem; /* Ajuste o tamanho da fonte para garantir que o texto seja visível */
+      white-space: nowrap; /* Evitar que o texto quebre em várias linhas */
+      margin-bottom: 0px; /* Adiciona espaço entre os spans */
+      margin-right: 38rem;
+      top: 20%;
+      left:20%;
+      
+    }
+  
+    .container__content--subtitle{
+      display: flex;
+      position: relative;
+      text-align: left;
+      margin-top: 10rem;
+      margin-left: 0rem;
+
+      margin-right: 0rem;
+      font-family: 'Yantramanav', sans-serif;
+      font-weight: 300;
+      top: 47%;
+      left: 20%;
+      color: white; 
+      z-index: 2;
+    }
+    
+    .content__titulo--3{
+      font-size: 1.5rem;
+    }
+  
+  }

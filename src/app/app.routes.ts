@@ -8,18 +8,21 @@ import { HomeComponent } from './pages/home/home.component';
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent ,
+        loadComponent:   () => 
+            import('./pages/home/home.component').then((p) => p.HomeComponent),
     },
 
     {
         path: 'sobre',
         title: 'Sobre',
-        component: SobreComponent,
+        loadComponent:   () => 
+            import('./pages/sobre/sobre.component').then((p) => p.SobreComponent),
     },
 
     {
         path: 'dados',
         title: 'Dados do Curso',
-        component: DadosDoCursoComponent,
+        loadComponent:   () => 
+            import('./pages/dados-do-curso/dados-do-curso.component').then((p) => p.DadosDoCursoComponent),
     }
 ];  

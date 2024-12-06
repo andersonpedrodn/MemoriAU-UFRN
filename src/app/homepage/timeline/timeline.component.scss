@@ -239,14 +239,7 @@ $textPrimary-color: #B3261E;
     margin: 0 auto;
     text-align: left;
 
-    @media (min-width: 768px) {
-        padding: 40px;
-
-    }
-
-    @media (max-width: 768px) {
-        font-size: 14px;
-    }
+  
 }
 
 .retangulo p {
@@ -507,6 +500,63 @@ button {
         margin: 20px;
         max-width: 100%;
     }
+    .retangulo {
+      margin-top: 0px;
+      padding: 40px;
+      
+    }
+    .retangulo p{
+      font-size: 1rem;
+    }
 
+    .imagem-direita-1{
+      position: absolute;
+      float: right;
+      margin-right: 17vw;
+      bottom: 775vh; /* Alinha a imagem com o final do contêiner */
+      right: 0%; /* Define a distância do lado direito */
+      width: 30vw; /* Ajuste conforme o tamanho desejado */
+      cursor: pointer; /* Mantém o cursor interativo */
+    }
+    .imagem-direita-2{
+      position: absolute;
+      float: right;
+      margin-right: 17vw;
+      bottom: 753vh; /* Alinha a imagem com o final do contêiner */
+      right: 0%; /* Define a distância do lado direito */
+      width: 30vw; /* Ajuste conforme o tamanho desejado */
+      cursor: pointer; /* Mantém o cursor interativo */
+    }
 
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-80%, -50%); /* Centraliza o modal */
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 20px 0px 20px 0px; /* Borda arredondada na parte superior esquerda e inferior direita */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1001; /* Garantir que o modal fica acima do overlay */
+      width: 80%;
+      height: 30%;
+      max-width: 50%; /* Tamanho máximo do modal */
+      display: block; /* Assegura que o modal seja exibido */
+      backdrop-filter: blur(30px);
+    }
 }
+
+
+@media (min-width: 768px) {
+  .retangulo {
+    padding: 40px;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+}
+

@@ -39,10 +39,13 @@
     
             <!-- Coluna Central (Linha do Tempo) -->
             <div class="col-md-6 timeLine__fundo text">
-                <img src="assets/images/linhaDoTempo.svg" alt="" class="linhaDoTempoFull">
+                <!-- imagem telas grandes -->
+                <img src="assets/images/linhaDoTempo.svg" alt="Linha do tempo" class="linhaDoTempoFull d-none d-md-block">      
+                <!-- imagem telas pequenas -->
+                <img src="assets/images/linhaDoTempoMobile.webp" alt="Linha do tempo (Mobile)" class="linhaDoTempoMobile d-block d-md-none">
             </div>
     
-            <!-- Coluna Direita -->
+            <!-- Coluna Direita --> 
             <div class="col-md-3 text-start">
                 <button (click)="scrollToEnd()" class="botao-direita-desce">
                     <img src="assets/icons/botaoDesce.svg" alt="">
