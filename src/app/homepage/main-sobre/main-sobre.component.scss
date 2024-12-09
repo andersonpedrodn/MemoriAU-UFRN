@@ -188,25 +188,32 @@
 
     .container__hero{
       width: 100%;
-      height: 300vh;
+      height: 90%;
       background-color: rgba(241, 236, 225, 0.9);
       position: relative;
       padding-top: 2.5vw;
       
+  }
 
+  .container__main h1{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .container__main p{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
     /* Ajustando título e texto */
     .main--titulo {
         font-size: 5vw; /* Ajuste do tamanho do título */
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 2rem;
 
     }
 
     .main--p {
         font-size: 4vw; /* Ajuste do tamanho do parágrafo */
-        padding: 20px;
+        
     }
 
     /* Ajustando as seções de informação */
@@ -222,11 +229,27 @@
     .retangulo__curriculo {
         padding: 30px;
         height: auto;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;  
     }
 
     /* Ajustando botões */
-    #button-container button {
-        flex: 1 1 calc(50% - 10px); /* Ajustando botões para caberem em 2 colunas */
+    #button-container {
+        // flex: 2 2 calc(50% - 10px); /* Ajustando botões para caberem em 2 colunas */
+        height: 30vh;
+        width: 85vw;
+      
+    }
+
+    .curriculo--titulo h1{
+      font-size: 1.5rem;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 0;
+    }
+
+    .retangulo__curriculo{
+      flex-direction: column;
     }
 
     /* Ajustando título de créditos */
@@ -237,5 +260,23 @@
 
     .creditos--h, .creditos--p {
         font-size: 4vw;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
+
+    .section__info h1{
+      font-size: 5vw;
+      font-weight: 700;
+     padding-left: 2rem;
+     padding-right: 2rem;
+    }
+    .section__info p{
+      font-size: 4vw;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+     
+    }
+
+    
 }

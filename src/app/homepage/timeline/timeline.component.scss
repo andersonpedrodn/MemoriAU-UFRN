@@ -206,11 +206,21 @@ $textPrimary-color: #B3261E;
     cursor: pointer; /* Mantém o cursor interativo */
 }
 
+.container__retangulo{
+  position: relative; /* Define o contexto de posicionamento */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -50%;
+}
+
+
 
 .linhaDoTempoInicio{
-    display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
 .main-timeLine {
@@ -222,22 +232,26 @@ $textPrimary-color: #B3261E;
     font-family: "Sora", sans-serif;
     align-items: center;
     text-align: center;
+    margin-top: 10vh;
 }
 
 .retangulo {
-    background-color: #FFFFFF1A;
+    position: absolute;
+    background-color: #fffffffd;
     border-radius: 1px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0 ,0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0 ,0, 0.5);
     max-width: 600px;
     margin: 20px auto;
     border: 1px solid #143F7199;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     width: 90%;
+    top: 40%;
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
+    z-index: 100;
 
   
 }
@@ -345,7 +359,7 @@ h1 {
 
 
 .modal h1 {
-  font-family: sans-serif;
+    
   font-weight: bold;
   margin-left: 4vw;
   margin-left: 2vw;
@@ -377,6 +391,7 @@ h1 {
     justify-content: space-between;
     align-items: center;
     border-bottom: none; /* Remover a linha inferior */
+    
 }
 
 /* Modal Body */
@@ -439,8 +454,8 @@ button {
     border-radius: 20px 0px 20px 0px; /* Borda arredondada na parte superior esquerda e inferior direita */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 1001; /* Garantir que o modal fica acima do overlay */
-    width: 40%;
-    height: 80%;
+    width: 50%;
+    height: 85%;
     max-width: 50%; /* Tamanho máximo do modal */
     display: block; /* Assegura que o modal seja exibido */
     backdrop-filter: blur(30px);
@@ -448,27 +463,37 @@ button {
   
   .modal-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    font-size: 2.0rem ;
+    padding-left: 1vw;
+    font-size: 1.8rem ;
     color: #333;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    
+   
   }
   
-  .modal-header h2 {
+  .modal-header h1 {
     margin: 0;
+    text-align: center  ;
+    font-family: "Sora", sans-serif;
+
+    
   }
   
   .close-button {
     background: none;
     border: none;
-    font-size: 20px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
-    color: #000;
+    color: #000;  
+    margin-right: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
   }
   
   .modal-footer {
@@ -522,7 +547,7 @@ button {
       position: absolute;
       float: right;
       margin-right: 17vw;
-      bottom: 753vh; /* Alinha a imagem com o final do contêiner */
+      bottom: 756vh; /* Alinha a imagem com o final do contêiner */
       right: 0%; /* Define a distância do lado direito */
       width: 30vw; /* Ajuste conforme o tamanho desejado */
       cursor: pointer; /* Mantém o cursor interativo */
