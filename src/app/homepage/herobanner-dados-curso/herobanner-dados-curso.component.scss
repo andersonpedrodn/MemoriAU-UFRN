@@ -136,7 +136,8 @@
 @media (max-width: 768px) {
   .container__hero {
     width: 100%;
-    height: 150vh;
+    height: 35%;
+    
     background-color: rgba(171, 64, 64, 0.9);
     background-image: url("/../assets/images/setaHeroBannerDados1.svg"), url("/../assets/images/setaHeroBannerDados2.svg");
     background-position: center 120vw , center 250vw;
@@ -224,7 +225,7 @@
     flex-direction: column; 
     align-items: center;
     padding: 100px 5vw 0;
-    padding-top: 40vw;
+    padding-top: 30vh;
   }
 
   .funcionarios--h{
@@ -243,5 +244,6 @@
     font-size: 5vw;
     text-align: center;
     padding-top: 3vw;
+    padding-bottom: 15vh;
   }
 }

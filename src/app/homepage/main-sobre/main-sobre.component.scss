@@ -73,7 +73,7 @@
     margin-top: 5vh ;
   }
   
-  #button-container button {
+  #button-container a {
     flex: 1 1 calc(33.33% - 10px); /* Cada botão ocupa 1/3 da largura da linha */
     box-sizing: border-box; /* Garante que o padding e a borda não afetem o tamanho */
     text-align: center;
@@ -240,6 +240,7 @@
         width: 85vw;
       
     }
+    
 
     .curriculo--titulo h1{
       font-size: 1.5rem;

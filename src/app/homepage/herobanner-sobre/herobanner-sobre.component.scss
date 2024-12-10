@@ -1,24 +1,36 @@
 .container__hero{
     width: 100%;
+    
+}
 
+section {
+    width: 100%;
+    height: 90vh;
 }
 
 section img {
+    display: block;
     width: 100%;
-    height: 800px;
-    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
 }
 
 
 
 @media (max-width: 767px) {
 
-    section img {
+    section {
         width: 100%;
-        height: 300px;
-        overflow: hidden;
-        object-fit: contain;
-        object-position: bottom center;
+        height: 40vh;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 70%;
         
     }
 

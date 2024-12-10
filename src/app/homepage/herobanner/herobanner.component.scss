@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url("/assets/images/galinheiro2008.webp");
   background-size: cover;
-  background-position: 150px 100px;
+  background-position: center -90%;
   transform: scale(1.2);
   transition: transform 0.5s ease;
 }
@@ -99,14 +99,14 @@ margin-left: 15px;
 }
 
 .container__hero--box {
-    position: absolute;
+    position: relative;
     top: 65%;
     left: 55%;
     transform: translate(-30%, -60%); /* Centraliza o retângulo */
     width: 50%; /* Ajuste o tamanho conforme necessário */
     height: 50%;
     width: 35%;
-    padding: 20px;
+    padding: 10%;
     background-color: rgba(128, 0, 0, 1); /* Cor vermelha com transparência */
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
