@@ -518,70 +518,289 @@ button {
   }
 
   
-
-  
-  @media (max-width: 767px) {
-    .modal-dialog {
-        margin: 20px;
-        max-width: 100%;
-    }
+  @media (max-width: 480px) {
+    
     .retangulo {
-      margin-top: 0px;
-      padding: 40px;
-      
-    }
-    .retangulo p{
-      font-size: 1rem;
-    }
-
-    .imagem-direita-1{
       position: absolute;
-      float: right;
-      margin-right: 17vw;
-      bottom: 775vh; /* Alinha a imagem com o final do contêiner */
-      right: 0%; /* Define a distância do lado direito */
-      width: 30vw; /* Ajuste conforme o tamanho desejado */
-      cursor: pointer; /* Mantém o cursor interativo */
-    }
-    .imagem-direita-2{
-      position: absolute;
-      float: right;
-      margin-right: 17vw;
-      bottom: 756vh; /* Alinha a imagem com o final do contêiner */
-      right: 0%; /* Define a distância do lado direito */
-      width: 30vw; /* Ajuste conforme o tamanho desejado */
-      cursor: pointer; /* Mantém o cursor interativo */
-    }
-
-    .modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-80%, -50%); /* Centraliza o modal */
-      background: rgba(255, 255, 255, 0.5);
+      background-color: #fffffffd;
+      border-radius: 1px;
       padding: 20px;
-      border-radius: 20px 0px 20px 0px; /* Borda arredondada na parte superior esquerda e inferior direita */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1001; /* Garantir que o modal fica acima do overlay */
+      box-shadow: 0 4px 8px rgba(0, 0 ,0, 0.5);
+      max-width: 500px;
+      margin: 20px auto;
+      border: 1px solid #143F7199;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       width: 80%;
-      height: 30%;
-      max-width: 50%; /* Tamanho máximo do modal */
-      display: block; /* Assegura que o modal seja exibido */
-      backdrop-filter: blur(30px);
+      height: 100%;
+      top: 40%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+      z-index: 100;
     }
-}
+    .retangulo p {
+      margin: 0 0 10px;
+      font-size: 1.0rem;
+      line-height: 1.7;
+      font-family: 'Sora', sans-serif;
+      font-weight: 300;
+  }
+    .titleText {
+      transform: translate(1rem , 5rem); /* Centraliza o retângulo */  
+  }
+    .timeline-container {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 5rem;
+      
+  }
+
+  .modal {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-80%, -50%); /* Centraliza o modal */
+          background: rgba(255, 255, 255, 0.5);
+          padding: 20px;
+          border-radius: 20px 0px 20px 0px; /* Borda arredondada na parte superior esquerda e inferior direita */
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          z-index: 1001; /* Garantir que o modal fica acima do overlay */
+          width: 80%;
+          height: 50%;
+          max-width: 50%; /* Tamanho máximo do modal */
+          display: block; /* Assegura que o modal seja exibido */
+          backdrop-filter: blur(30px);
+        }
+
+  .imagem-direita-1{
+    position: absolute;
+    float: right;
+    margin-right: 17vw;
+    bottom: 778vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 25vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-2{
+    position: absolute;
+    float: right;
+    margin-right: 10vw;
+    bottom: 700vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 30vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-3{
+    position: absolute;
+    float: right;
+    margin-right: 7vw;
+    bottom: 520vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 34vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-4{
+    position: absolute;
+    float: right;
+    margin-right: 7vw;
+    bottom: 410vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 32vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-5{
+    position: absolute;
+    float: right;
+    margin-right: 7vw;
+    bottom: 330vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 32vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-6{
+    position: absolute;
+    float: right;
+    margin-right: 7vw;
+    bottom: 230vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 32vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-7{
+    position: absolute;
+    float: right;
+    margin-right: 7vw;
+    bottom: 160vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-8{
+    position: absolute;
+    float: right;
+    margin-right: 55vw;
+    bottom: 98vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 32vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-9{
+    position: absolute;
+    float: right;
+    margin-right: 19vw;
+    bottom: 40vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 25vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-direita-10{
+    position: absolute;
+    float: right;
+    margin-right: 14vw;
+    bottom: 1vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 30vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-1{
+    position: absolute;
+    float: left;
+    margin-left: 40vw;
+    bottom: 752vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-2{
+    position: absolute;
+    float: left;
+    margin-left: 5vw;
+    bottom: 700vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 25vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-3{
+    position: absolute;
+    float: left;
+    margin-left: 35vw;
+    bottom: 585vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-4{
+    position: absolute;
+    float: left;
+    margin-left: 5vw;
+    bottom: 435vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-5{
+    position: absolute;
+    float: left;
+    margin-left: 5vw;
+    bottom: 305vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .imagem-esquerda-6{
+    position: absolute;
+    float: left;
+    margin-left: 45vw;
+    bottom: 130vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 35vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .botao-direita-sobe{
+    position: absolute;
+    float: right;
+    margin-right: 5vw;
+    bottom: 20vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 20vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+  }
+  .botao-direita-desce{
+    position: absolute;
+    float: right;
+    margin-right: 5vw;
+    bottom: 830vh; /* Alinha a imagem com o final do contêiner */
+    right: 0%; /* Define a distância do lado direito */
+    width: 20vw; /* Ajuste conforme o tamanho desejado */
+    cursor: pointer; /* Mantém o cursor interativo */
+
+  }
+ }
+  
+//   @media (max-width: 767px) {
+//     .modal-dialog {
+//         margin: 20px;
+//         max-width: 100%;
+//     }
+//     .retangulo {
+//       margin-top: 0px;
+//       padding: 40px;
+      
+//     }
+//     .retangulo p{
+//       font-size: 1rem;
+//     }
+
+//     .imagem-direita-1{
+//       position: absolute;
+//       float: right;
+//       margin-right: 17vw;
+//       bottom: 775vh; /* Alinha a imagem com o final do contêiner */
+//       right: 0%; /* Define a distância do lado direito */
+//       width: 30vw; /* Ajuste conforme o tamanho desejado */
+//       cursor: pointer; /* Mantém o cursor interativo */
+//     }
+//     .imagem-direita-2{
+//       position: absolute;
+//       float: right;
+//       margin-right: 17vw;
+//       bottom: 756vh; /* Alinha a imagem com o final do contêiner */
+//       right: 0%; /* Define a distância do lado direito */
+//       width: 30vw; /* Ajuste conforme o tamanho desejado */
+//       cursor: pointer; /* Mantém o cursor interativo */
+//     }
+
+//     .modal {
+//       position: fixed;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-80%, -50%); /* Centraliza o modal */
+//       background: rgba(255, 255, 255, 0.5);
+//       padding: 20px;
+//       border-radius: 20px 0px 20px 0px; /* Borda arredondada na parte superior esquerda e inferior direita */
+//       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+//       z-index: 1001; /* Garantir que o modal fica acima do overlay */
+//       width: 80%;
+//       height: 30%;
+//       max-width: 50%; /* Tamanho máximo do modal */
+//       display: block; /* Assegura que o modal seja exibido */
+//       backdrop-filter: blur(30px);
+//     }
+// }
 
 
-@media (min-width: 768px) {
-  .retangulo {
-    padding: 40px;
-  }
-  .d-md-block {
-    display: block !important;
-  }
+// @media (min-width: 768px) {
+//   .retangulo {
+//     padding: 40px;
+//   }
+//   .d-md-block {
+//     display: block !important;
+//   }
 
-  .d-md-none {
-    display: none !important;
-  }
-}
+//   .d-md-none {
+//     display: none !important;
+//   }
+// }
 
